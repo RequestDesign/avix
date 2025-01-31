@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <script defer src="./index.js"></script>
+    <title>AVIX</title>
+  </head>
+  <body>
+    <article class="feedback-call-form modal-inactive">
+      <button class="cross-button">
+        <div class="first-line"></div>
+        <div class="second-line"></div>
+      </button>
+      <h4>
+        Оставьте свой номер телефона, и наш менеджер свяжется с Вами для
+        дальнейшей консультации
+      </h4>
+      <form>
+        <input
+          type="text"
+          placeholder="Ваше имя"
+          class="feedback-name"
+          required
+        />
+        <div class="feedback-call-form-tel">
+          <input type="text" value="+7" class="tel-prefix" />
+          <input
+            type="tel"
+            class="tel-body"
+            placeholder="(000) 000 00 00"
+            required
+          />
+        </div>
+        <input
+          type="submit"
+          value="Отправить"
+          class="feedback-call-form-submit"
+        />
+      </form>
+      <div class="feedback-call-warning">
+        <span><img src="./public/modals/checkbox.png" alt="checkbox" /></span>
+        <p>
+          Нажимая кнопку "Отправить" Вы Соглашаетесь с условиями
+          <a href="">Политики конфиденциальности</a>
+        </p>
+      </div>
+    </article>
+    <header>
+      <div class="logo-phone-wrapper">
+        <div class="header-phone">
+          <img src="./public/header/map-pin.png" alt="map-pin" />
+          <a href="tel:84953694298" class="phone-number">7 (495) 369 42 98</a>
+        </div>
+        <div class="header-logo-wrapper">
+          <img src="./public/avix_logo.png" alt="логотип" class="header-logo" />
+        </div>
+        <div class="order-call-wrapper">
+          <button class="order-call">ЗАКАЗАТЬ ЗВОНОК</button>
+        </div>
+      </div>
+      <div class="logo-phone-underline"></div>
+      <nav class="header-menu">
+        <button class="header-menu-button" id="menu-catalog">КАТАЛОГ</button>
+        <button class="header-menu-button" id="menu-gotschlich">
+          GOTSCHLICH
+        </button>
+        <button class="header-menu-button" id="menu-avix">AVIX</button>
+        <button class="header-menu-button">РЕШЕНИЯ</button>
+        <button class="header-menu-button">ПРОЕКТЫ</button>
+        <button class="header-menu-button">ПОДДЕРЖКА</button>
+        <button class="header-menu-button">АКСЕССУАРЫ</button>
+        <button class="header-menu-button">КОМПАНИЯ</button>
+      </nav>
+    </header>
+    <section class="categories-popup-modal modal-inactive">
+      <article class="categories-popup-list">
+        <figure>
+          <figcaption>КАТЕГОРИИ</figcaption>
+          <ul>
+            <li><a href="">Распашные турникеты</a></li>
+            <li><a href="">Полноростовые турникеты</a></li>
+            <li><a href="">Турникеты 3</a></li>
+            <li><a href="">Турникеты 4</a></li>
+            <li><a href="">Турникеты 5</a></li>
+            <li><a href="">Турникеты 6</a></li>
+            <li><a href="">Турникеты 7</a></li>
+          </ul>
+        </figure>
+        <figure>
+          <figcaption>АКСЕССУАРЫ</figcaption>
+          <ul>
+            <li><a href="">Аксессуары 1</a></li>
+            <li><a href="">Аксессуары 2</a></li>
+            <li><a href="">Аксессуары 3</a></li>
+            <li><a href="">Аксессуары 4</a></li>
+            <li><a href="">Аксессуары 5</a></li>
+            <li><a href="">Аксессуары 6</a></li>
+          </ul>
+        </figure>
+        <figure>
+          <figcaption>ПРЕМИАЛЬНЫЕ РЕШЕНИЯ</figcaption>
+          <ul>
+            <li><a href="">Стадионы</a></li>
+            <li><a href="">Бизнес</a></li>
+            <li><a href="">Стадионы</a></li>
+            <li><a href="">Бизнес</a></li>
+            <li><a href="">Стадионы</a></li>
+            <li><a href="">Бизнес</a></li>
+            <li><a href="">Стадионы</a></li>
+            <li><a href="">Бизнес</a></li>
+          </ul>
+        </figure>
+      </article>
+      <div class="image-for-categories-section">
+        <picture>
+          <source src="./public/modals/categories-modal.webp" />
+          <img
+            src="./public/modals/categories-modal.png"
+            alt="categories-image"
+          />
+        </picture>
+      </div>
+    </section>
+    <main>
+      <section class="welcome-preview-video">
+        <article class="welcome-preview-slider-wrapper">
+          <button class="gotschlich-avix-slider">
+            <div class="slider-company chosen-preview">Gotschlich</div>
+            <div class="slider-company">AVIX</div>
+          </button>
+          <div class="slider-on-button"></div>
+        </article>
+        <article class="welcome-video-description">
+          <div class="video-container">
+            <img src="./public/preview.gif" alt="preview" class="preview-gif" />
+            <div class="above-video">
+              <h1>Ваш эксперт в мире турникетов и систем контроля</h1>
+              <h6>
+                Специализируемся на создании эффективных систем контроля
+                доступа. Надежность, стиль и передовые технологии для Вашего
+                удобства
+              </h6>
+            </div>
+          </div>
+          <div class="description-under-preview">
+            <div class="bestseller-name">
+              <h2>Gotschlich Axioma VIP</h2>
+              <p>Распашной турникет</p>
+            </div>
+            <button class="learn-more">Подробнее о модели</button>
+            <button class="goto-catalog">Каталог</button>
+          </div>
+        </article>
+        <article class="learn-about-avix">
+          <div class="avix-description">
+            <h1>Один клик к вашему новому AVIX</h1>
+            <p>Выберите свой идеальный AVIX для Вашего объекта</p>
+            <button>Подробнее о модели</button>
+          </div>
+          <div class="about-avix-img">
+            <picture>
+              <source src="./public/avix.webp" />
+              <img src="./public/avix.png" alt="about-avix-image" />
+            </picture>
+          </div>
+        </article>
+      </section>
+      <section class="itis-your-best-decision">
+        <p>Выбирая</p>
+        <div class="best-desicion-wrapper">
+          <div class="left-header">
+            <h1>Качество</h1>
+            <h1>Надежность</h1>
+            <h1>AVIX</h1>
+          </div>
+          <div class="right-description">
+            <p>
+              Заботясь о надежной и долговечной реализации Ваших проектов мы
+              выбираем лучшие мировые бренды турникетов. <br />АВИКС
+              Дистрибьюторский центр выпускает турникеты под собственным брендом
+              AVIX и является эксклюзивным поставщиком сверхнадежных австрийских
+              турникетов Gotschlich
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="premium-gallery">
+        <h1>Премиальные решения</h1>
+        <nav class="premium-gallery-menu">
+          <button class="gallery-menu-button">Бизнес-центры</button>
+          <button class="gallery-menu-button">Стадионы</button>
+          <button class="gallery-menu-button">Промышленные объекты</button>
+          <button class="gallery-menu-button">Аэропорты и вокзалы</button>
+          <button class="gallery-menu-button">Горнолыжные курорты</button>
+          <button class="gallery-menu-button">
+            Торговые и выставочные объекты
+          </button>
+          <button class="gallery-menu-button">Вузы и школы</button>
+          <button class="gallery-menu-button">Парки и катки</button>
+        </nav>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <picture>
+              <source src="./public/premium-gallery1.webp" />
+              <img src="./public/premium-gallery1.png" alt="prem-gallery-img" />
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <source src="./public/prem-gallery2.webp" />
+              <img src="./public/prem-gallery2.png" alt="prem-gallery-img" />
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <source src="./public/prem-gallery3.webp" />
+              <img src="./public/prem-gallery3.png" alt="prem-gallery-img" />
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <source src="./public/prem-gallery4.webp" />
+              <img src="./public/prem-gallery4.png" alt="prem-gallery-img" />
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <source src="./public/premium-gallery1.webp" />
+              <img src="./public/premium-gallery1.png" alt="prem-gallery-img" />
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <source src="./public/prem-gallery2.webp" />
+              <img src="./public/prem-gallery2.png" alt="prem-gallery-img" />
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <source src="./public/prem-gallery3.webp" />
+              <img src="./public/prem-gallery3.png" alt="prem-gallery-img" />
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <source src="./public/prem-gallery4.webp" />
+              <img src="./public/prem-gallery4.png" alt="prem-gallery-img" />
+            </picture>
+          </div>
+        </div>
+        <button class="check-all"></button>
+      </section>
+    </main>
+  </body>
+</html>
