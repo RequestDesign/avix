@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./index.js"></script>
+    <title>Nature Safety</title>
+  </head>
+  <body>
+    <article class="feedback-call-form modal-inactive">
+      <button class="cross-button">
+        <div class="first-line"></div>
+        <div class="second-line"></div>
+      </button>
+      <h4>
+        Оставьте свой номер телефона, и наш менеджер свяжется с Вами для
+        дальнейшей консультации
+      </h4>
+      <form>
+        <input
+          type="text"
+          placeholder="Ваше имя"
+          class="feedback-name"
+          required
+        />
+        <div class="feedback-call-form-tel">
+          <label for="feedback-tel" class="feedback-tel-label">Телефон</label>
+          <input type="text" value="+7" class="tel-prefix" />
+          <input
+            type="tel"
+            class="tel-body"
+            placeholder="(000) 000 00 00"
+            name="feedback-tel"
+            required
+          />
+        </div>
+        <input
+          type="submit"
+          value="Отправить"
+          class="feedback-call-form-submit"
+        />
+      </form>
+      <div class="feedback-call-warning">
+        <span><img src="./public/modals/checkbox.png" alt="checkbox" /></span>
+        <p>
+          Нажимая кнопку "Отправить" Вы Соглашаетесь с условиями
+          <a href="">Политики конфиденциальности</a>
+        </p>
+      </div>
+    </article>
+    <header>
+      <div class="logo-phone-wrapper">
+        <div class="header-phone">
+          <img src="./public/header/map-pin.png" alt="map-pin" />
+          <a href="tel:84953694298" class="phone-number">7 (495) 369 42 98</a>
+        </div>
+        <div class="header-phone-mobile">
+          <a href="tel:84953694298" class="phone-number"
+            ><img src="./public/phone.png" alt="phone"
+          /></a>
+        </div>
+        <div class="header-logo-wrapper">
+          <img src="./public/avix_logo.png" alt="логотип" class="header-logo" />
+        </div>
+        <div class="mobile-menu">
+          <button><img src="./public/menu-2.png" alt="menu" /></button>
+        </div>
+        <div class="order-call-wrapper">
+          <button class="order-call">ЗАКАЗАТЬ ЗВОНОК</button>
+        </div>
+      </div>
+      <div class="logo-phone-underline"></div>
+      <nav class="header-menu">
+        <button class="header-menu-button" id="menu-catalog">
+          КАТАЛОГ <br />
+          <section class="categories-popup-modal">
+            <article class="categories-popup-list">
+              <figure>
+                <figcaption>КАТЕГОРИИ</figcaption>
+                <ul>
+                  <li><a href="">Распашные турникеты</a></li>
+                  <li><a href="">Полноростовые турникеты</a></li>
+                  <li><a href="">Раздвижные турникеты</a></li>
+                  <li><a href="">Роторные турникеты</a></li>
+                  <li><a href="">Турникеты-триподы</a></li>
+                  <li><a href="">Моторизованные и механические двери</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>АКСЕССУАРЫ</figcaption>
+                <ul>
+                  <li><a href="">Ограждения</a></li>
+                  <li>
+                    <a href="">Крыши для полноростовых турникетов Ecco</a>
+                  </li>
+                  <li><a href="">Калитки</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>ПРЕМИАЛЬНЫЕ РЕШЕНИЯ</figcaption>
+                <ul>
+                  <li><a href="">Стадионы</a></li>
+                  <li><a href="">Бизнес-центры</a></li>
+                  <li><a href="">Аэропорты и вокзалы</a></li>
+                  <li><a href="">Горнолыжные курорты</a></li>
+                  <li><a href="">Природоохранные зоны</a></li>
+                  <li><a href="">Спортивные и фитнес-центры</a></li>
+                  <li><a href="">Музеи и выставочные объекты</a></li>
+                  <li><a href="">Промышленные зоны</a></li>
+                  <li><a href="">Турникеты для МГН</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>ПРОИЗВОДИТЕЛИ</figcaption>
+                <ul>
+                  <li><a href="">Gotschlich</a></li>
+                  <li><a href="">AVIX</a></li>
+                </ul>
+              </figure>
+            </article>
+            <div class="image-for-categories-section">
+              <picture>
+                <source src="./public/modals/categories-modal.webp" />
+                <img
+                  src="./public/modals/categories-modal.png"
+                  alt="categories-image"
+                />
+              </picture>
+            </div>
+          </section>
+        </button>
+        <button class="header-menu-button" id="menu-gotschlich">
+          GOTSCHLICH <br />
+          <section class="gotschlich-popup-modal">
+            <article class="gotschlich-popup-list">
+              <figure>
+                <figcaption>РАСПАШНЫЕ ТУРНИКЕТЫ</figcaption>
+                <ul>
+                  <li><a href="">Axioma DF VIP</a></li>
+                  <li><a href="">Axioma DF</a></li>
+                  <li><a href="">Axioma High</a></li>
+                  <li><a href="">Selection DF</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>ТУРНИКЕТЫ-ТРИПОДЫ</figcaption>
+                <ul>
+                  <li><a href="">Modul Cross</a></li>
+                  <li><a href="">Tonda</a></li>
+                  <li><a href="">Calypso</a></li>
+                  <li><a href="">Compact</a></li>
+                  <li><a href="">Dolomit</a></li>
+                  <li><a href="">Trinity</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>ПОЛНОРОСТОВЫЕ ТУРНИКЕТЫ</figcaption>
+                <ul>
+                  <li><a href="">Ecco полноростовые</a></li>
+                  <li><a href="">Vario полноростовые</a></li>
+                  <li><a href="">Forum полноростовые</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>РАЗДВИЖНЫЕ ТУРНИКЕТЫ</figcaption>
+                <ul>
+                  <li><a href="">Selection LF</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>РОТОРНЫЕ ТУРНИКЕТЫ</figcaption>
+                <ul>
+                  <li><a href="">Vario полуростовые</a></li>
+                  <li><a href="">Gyro полуростовые</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>ДВЕРИ</figcaption>
+                <ul>
+                  <li><a href="">Ecco моторизованные</a></li>
+                  <li><a href="">Ecco механические</a></li>
+                </ul>
+              </figure>
+            </article>
+            <div class="image-for-gotschlich-section">
+              <picture>
+                <source src="./public/modals/gotschlich-modal.webp" />
+                <img
+                  src="./public/modals/gotschlich-modal.png"
+                  alt="gotschlich-image"
+                />
+              </picture>
+            </div>
+          </section>
+        </button>
+        <button class="header-menu-button" id="menu-avix">
+          AVIX <br />
+          <section class="avix-popup-modal modal-inactive">
+            <article class="avix-popup-list">
+              <figure>
+                <figcaption>РАСПАШНЫЕ ТУРНИКЕТЫ</figcaption>
+                <ul>
+                  <li><a href="">AVIX Mercury</a></li>
+                  <li><a href="">AVIX Bravo</a></li>
+                  <li><a href="">AVIX Omega</a></li>
+                  <li><a href="">AVIX Tango</a></li>
+                  <li><a href="">AVIX Oscar</a></li>
+                  <li><a href="">AVIX Sierra</a></li>
+                  <li><a href="">AVIX Delta</a></li>
+                  <li><a href="">AVIX 6653</a></li>
+                  <li><a href="">AVIX 6656</a></li>
+                  <li><a href="">AVIX 6657M</a></li>
+                </ul>
+              </figure>
+
+              <figure>
+                <figcaption>ПОЛНОРОСТОВЫЕ ТУРНИКЕТЫ</figcaption>
+                <ul>
+                  <li><a href="">AVIX Lima</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>ТУМБОВЫЕ ТУРНИКЕТЫ</figcaption>
+                <ul>
+                  <li><a href="">AVIX 6383</a></li>
+                  <li><a href="">AVIX 6328</a></li>
+                  <li><a href="">AVIX 6371X</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>ВЫПАДАЮЩИЕ ТУРНИКЕТЫ</figcaption>
+                <ul>
+                  <li><a href="">AVIX 6983</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>КАЛИТКИ</figcaption>
+                <ul>
+                  <li><a href="">AVIX 6670A</a></li>
+                </ul>
+              </figure>
+            </article>
+            <div class="image-for-avix-section">
+              <picture>
+                <source src="./public/modals/avix-modal.webp" />
+                <img src="./public/modals/avix-modal.png" alt="avix-image" />
+              </picture>
+            </div>
+          </section>
+        </button>
+        <button class="header-menu-button">РЕШЕНИЯ</button>
+        <button class="header-menu-button" id="menu-projects">
+          ПРОЕКТЫ <br />
+          <section class="projects-popup-modal modal-inactive">
+            <article class="projects-popup-list">
+              <figure>
+                <figcaption>ПРОИЗВОДИТЕЛИ</figcaption>
+                <ul>
+                  <li><a href="">Gotschlich</a></li>
+                  <li><a href="">AVIX</a></li>
+                </ul>
+              </figure>
+
+              <figure>
+                <figcaption>ТЕХНИЧЕСКАЯ ПОДДЕРЖКА</figcaption>
+                <ul>
+                  <li><a href="">Сервисный центр</a></li>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Сертификация</a></li>
+                  <li><a href="">Документация</a></li>
+                  <li><a href="">Сертификаты</a></li>
+                  <li><a href="">Энциклопедия</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>ИНФОРМАЦИЯ</figcaption>
+                <ul>
+                  <li><a href="">Контакты</a></li>
+                </ul>
+              </figure>
+            </article>
+            <div class="image-for-projects-section">
+              <picture>
+                <source src="./public/modals/projects-modal.webp" />
+                <img
+                  src="./public/modals/projects-modal.png"
+                  alt="projects-image"
+                />
+              </picture>
+            </div>
+          </section>
+        </button>
+        <button class="header-menu-button">ПОДДЕРЖКА</button>
+        <button class="header-menu-button">АКСЕССУАРЫ</button>
+        <button class="header-menu-button" id="menu-company">
+          КОМПАНИЯ <br />
+          <section class="company-popup-modal modal-inactive">
+            <article class="company-popup-list">
+              <figure>
+                <figcaption>ПРОИЗВОДИТЕЛИ</figcaption>
+                <ul>
+                  <li><a href="">Gotschlich</a></li>
+                  <li><a href="">AVIX</a></li>
+                </ul>
+              </figure>
+
+              <figure>
+                <figcaption>КОМПАНИЯ</figcaption>
+                <ul>
+                  <li><a href="">О компании</a></li>
+                  <li><a href="">Наша команда</a></li>
+                  <li><a href="">Мероприятия</a></li>
+                  <li><a href="">Календарь мероприятий</a></li>
+                  <li><a href="">Новости</a></li>
+                </ul>
+              </figure>
+              <figure>
+                <figcaption>ИНФОРМАЦИЯ</figcaption>
+                <ul>
+                  <li><a href="">Контакты</a></li>
+                  <li><a href="">Политика конфиденциальности</a></li>
+                </ul>
+              </figure>
+            </article>
+            <div class="image-for-company-section">
+              <picture>
+                <source src="./public/modals/company-modal.webp" />
+                <img
+                  src="./public/modals/company-modal.png"
+                  alt="company-image"
+                />
+              </picture>
+            </div>
+          </section>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <h1 class="made-projects-header">Турникеты для природоохранных зон</h1>
+      <section class="made-projects-gallery">
+        <article class="big-made-project-card">
+          <div class="image-for-project-article">
+            <picture>
+              <source src="./public/project1.webp" />
+              <img src="./public/project1.png" alt="catalog-image" />
+            </picture>
+          </div>
+        </article>
+      </section>
+      <p class="office-p-description">
+        Природоохранные зоны — территории, требующие особой охраны из-за её
+        природных, культурных или иных особенностей. Gotschlich предлагает
+        различные варианты турникетов для заповедников и других природоохранных
+        зон в зависимости от того, где конкретно они устанавливаются. Так как
+        монтаж выполняется на улице, важны надежность и прочность конструкций, а
+        также устойчивость к атмосферному воздействию.
+      </p>
+      <section class="nature-safety-catalog">
+        <article class="full-width-category">
+          <h1>Распашные турникеты</h1>
+          <div class="full-width-category-image-wrapper">
+            <picture>
+              <source src="./public/category-gots1.webp" />
+              <img
+                src="./public/category-gots1.png"
+                alt="category-gots-image"
+              />
+            </picture>
+          </div>
+          <h3>Gotschlich Axioma</h3>
+          <p>
+            Полуростовой сенсорный турникет из нержавеющей стали матовой
+            полировки с распашными створками и панелями из акрилового стекла с
+            возможностью нанесения на них любого изображения.
+          </p>
+          <button>Подробнее о модели</button>
+        </article>
+      </section>
+      <section class="made-projects-gallery">
+        <section class="small-projects-cards-wrapper">
+          <article class="small-project-card">
+            <div class="image-for-small-project-article">
+              <picture>
+                <source src="./public/project1.webp" />
+                <img src="./public/project1.png" alt="catalog-image" />
+              </picture>
+            </div>
+          </article>
+          <article class="small-project-card">
+            <div class="image-for-small-project-article">
+              <picture>
+                <source src="./public/project2.webp" />
+                <img src="./public/project2.png" alt="catalog-image" />
+              </picture>
+            </div>
+          </article>
+          <article class="small-project-card">
+            <div class="image-for-small-project-article">
+              <picture>
+                <source src="./public/project3.webp" />
+                <img src="./public/project3.png" alt="catalog-image" />
+              </picture>
+            </div>
+          </article>
+        </section>
+      </section>
+      <section class="nature-safety-catalog">
+        <article class="full-width-category">
+          <h1>Распашные турникеты</h1>
+          <div class="full-width-category-image-wrapper">
+            <picture>
+              <source src="./public/category-gots1.webp" />
+              <img
+                src="./public/category-gots1.png"
+                alt="category-gots-image"
+              />
+            </picture>
+          </div>
+          <h3>Gotschlich Axioma</h3>
+          <p>
+            Полуростовой сенсорный турникет из нержавеющей стали матовой
+            полировки с распашными створками и панелями из акрилового стекла с
+            возможностью нанесения на них любого изображения.
+          </p>
+          <button>Подробнее о модели</button>
+        </article>
+      </section>
+      <section class="made-projects-gallery">
+        <section class="small-projects-cards-wrapper">
+          <article class="small-project-card">
+            <div class="image-for-small-project-article">
+              <picture>
+                <source src="./public/project1.webp" />
+                <img src="./public/project1.png" alt="catalog-image" />
+              </picture>
+            </div>
+          </article>
+          <article class="small-project-card">
+            <div class="image-for-small-project-article">
+              <picture>
+                <source src="./public/project2.webp" />
+                <img src="./public/project2.png" alt="catalog-image" />
+              </picture>
+            </div>
+          </article>
+          <article class="small-project-card">
+            <div class="image-for-small-project-article">
+              <picture>
+                <source src="./public/project3.webp" />
+                <img src="./public/project3.png" alt="catalog-image" />
+              </picture>
+            </div>
+          </article>
+        </section>
+      </section>
+      <section class="gotschlich-customization">
+        <h5>Решения</h5>
+        <h1
+          style="
+            text-align: left;
+            font-size: 2rem;
+            width: 70%;
+            margin: auto auto;
+          "
+        >
+          Правильный выбор турникетов обеспечит их длительную и комфортную
+          эксплуатацию.
+        </h1>
+
+        <section class="for-beautiful-cards">
+          <article class="full-width-card">
+            <div class="card-image-wrapper">
+              <picture>
+                <source src="./public/card10.webp" />
+                <img src="./public/card10.png" alt="card-image" />
+              </picture>
+            </div>
+            <h3>Кастомизация</h3>
+            <p>
+              Турникеты легко адаптируются под ваши требования благодаря широким
+              возможностям кастомизации. Можно выбрать материалы, цветовые
+              решения, дополнительные функции или интеграцию с различными
+              системами контроля доступа для соответствия уникальным задачам
+              вашего объекта.
+            </p>
+          </article>
+          <article class="half-width-card">
+            <div class="card-image-wrapper">
+              <picture>
+                <source src="./public/card11.webp" />
+                <img src="./public/card11.png" alt="card-image" />
+              </picture>
+            </div>
+            <h3>Любые объемы</h3>
+            <p>
+              Турникеты обеспечивают высокую пропускную способность и
+              устойчивость к интенсивной эксплуатации. Современные технологии и
+              оптимизированные механизмы гарантируют стабильную работу даже при
+              пиковых нагрузках. Мы предлагаем индивидуальные решения для
+              масштабных объектов: от настройки оборудования до интеграции с
+              системами контроля доступа.
+            </p>
+          </article>
+          <article class="half-width-card">
+            <div class="card-image-wrapper">
+              <picture>
+                <source src="./public/card12.webp" />
+                <img src="./public/card12.png" alt="card-image" />
+              </picture>
+            </div>
+            <h3>Турникеты для МГН</h3>
+            <p>
+              Турникеты адаптированы для комфорта и удобства всех пользователей,
+              включая людей, с ограниченными возможностями. Широкие проходы и
+              возможность интеграции с автоматическими дверями или калитками
+              обеспечивают беспрепятственный доступ, сохраняя при этом высокий
+              уровень безопасности и контроля.
+            </p>
+          </article>
+        </section>
+      </section>
+      <h1 class="premium-decisions-header">
+        <span>Gotschlich и AVIX</span> – турникеты для любых объектов и целей
+      </h1>
+      <p class="premium-decisions-description">
+        Компания <span>AVIX</span> предлагает абсолютно все виды турникетов для
+        проходной. Вы можете выбрать и купить турникет любого вида с доставкой
+        по России и СНГ.
+      </p>
+      <section
+        class="for-beautiful-cards"
+        style="justify-content: end; margin-top: 0"
+      >
+        <article class="full-width-card">
+          <div class="card-image-wrapper">
+            <picture>
+              <source src="./public/card5.webp" />
+              <img src="./public/card5.png" alt="card-image" />
+            </picture>
+          </div>
+        </article>
+        <button class="single-line-card-order-call" style="margin: 0">
+          Оставить заявку
+        </button>
+      </section>
+    </main>
+    <footer>
+      <section class="projects-SNG">
+        <div class="projects-header-wrapper">
+          <h1>
+            Проекты <span>AVIX и Gotschlich</span><br />
+            на территории России и СНГ
+          </h1>
+          <button>Смотреть все</button>
+        </div>
+        <div class="projects-wrapper">
+          <article class="single-project">
+            <div class="projects-item-img">
+              <div class="goto-arrow-projects">&#8599;</div>
+              <picture>
+                <source src="./public/project1.webp" />
+                <img src="./public/project1.png" alt="projects-image" />
+              </picture>
+            </div>
+            <h4>Большая спортивная арена Лужники, Москва</h4>
+            <p>
+              Двухпроходные <u>полноростовые турникеты</u> Gotschlich серии
+              <u>Ecco Olympia </u>установлены по периметру стадиона, обеспечивая
+              быстрый и комфортный проход.
+              <u>Распашные турникеты Axioma</u> используются на VIP группах. Все
+              поставляемые турникеты работают на улице.
+            </p>
+          </article>
+          <article class="single-project">
+            <div class="projects-item-img">
+              <div class="goto-arrow-projects">&#8599;</div>
+              <picture>
+                <source src="./public/project2.webp" />
+                <img src="./public/project2.png" alt="projects-image" />
+              </picture>
+            </div>
+            <h4>Завод компании ISBC, Зеленоград</h4>
+            <p>
+              Входную группу на территорию предприятия оборудовали тумбовыми
+              турникетами <u>Modul Cross 2-Arm</u> и моторизованной калиткой
+              <u>Ikarus Holm</u>, а чистые зоны — распашным турникетом Axioma DF
+              и полноростовым турникетом <u>Ecco Arena</u>.
+            </p>
+          </article>
+          <article class="single-project">
+            <div class="projects-item-img">
+              <div class="goto-arrow-projects">&#8599;</div>
+              <picture>
+                <source src="./public/project3.webp" />
+                <img src="./public/project3.png" alt="projects-image" />
+              </picture>
+            </div>
+            <h4>ФОК Торпедо</h4>
+            <p>
+              Двухпроходные <u>полноростовые турникеты</u> Gotschlich серии
+              <u>Ecco Olympia </u>установлены по периметру стадиона, обеспечивая
+              быстрый и комфортный проход.
+              <u>Распашные турникеты Axioma</u> используются на VIP группах. Все
+              поставляемые турникеты работают на улице.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="show-room">
+        <div class="show-room-img">
+          <picture>
+            <source src="./public/showroom.webp" />
+            <img src="./public/showroom.png" alt="showroom-image" />
+          </picture>
+        </div>
+        <div class="above-show-room">
+          <div class="goto-arrow-show-room">&#8599;</div>
+          <h1>Шоурум</h1>
+          <p>Оцените преимущества AVIX и Gotschlich в новом шоуруме</p>
+        </div>
+      </section>
+      <section class="phone-number-form">
+        <p>7 (495) 369 42 98</p>
+        <div class="phone-underline"></div>
+        <h2>Узнавайте первым о новинках, кейсах и новостях</h2>
+        <form>
+          <input
+            type="email"
+            placeholder="Ваш email"
+            class="email-footer"
+            required
+          />
+
+          <button class="submit-footer">
+            <img src="./public/chevron-left.png" alt="submit" />
+          </button>
+        </form>
+      </section>
+      <section class="contacts-footer">
+        <div class="contacts-footer-wrapper">
+          <article class="contacts-hrefs">
+            <img src="./public/avix_logo_white.png" alt="avix" />
+            <button class="for-integrators">Интеграторам</button>
+            <p>Больше новостей в наших социальных сетях</p>
+            <div class="social-media">
+              <button>
+                <img src="./public/avix_tg_button.png" alt="avix-tg" />
+              </button>
+              <button>
+                <img
+                  src="./public/gotschlich_tg_button.png"
+                  alt="gotschlich-tg"
+                />
+              </button>
+              <button>
+                <img src="./public/rutube_button.png" alt="rutube" />
+              </button>
+            </div>
+          </article>
+          <div class="contacts-hrefs-wrapper">
+            <article class="contacts-hrefs">
+              <figure>
+                <figcaption>О компании</figcaption>
+                <ul>
+                  <li><a href="">Команда</a></li>
+                  <li><a href="">Карьера в AVIX</a></li>
+                  <li><a href="">Контакты</a></li>
+                  <li><a href="">Реквизиты</a></li>
+                </ul>
+              </figure>
+            </article>
+            <article class="contacts-hrefs">
+              <figure>
+                <figcaption>Поддержка</figcaption>
+                <ul>
+                  <li><a href="">Техническая поддержка</a></li>
+                  <li><a href="">Сертификация специалистов</a></li>
+                  <li><a href="">Сервисный центр</a></li>
+                  <li><a href="">Документация</a></li>
+                </ul>
+              </figure>
+            </article>
+            <article class="contacts-hrefs">
+              <figure>
+                <figcaption>Продукция</figcaption>
+                <ul>
+                  <li><a href="">Каталог</a></li>
+                  <li><a href="">Решения</a></li>
+                  <li><a href="">Gotschlich</a></li>
+                  <li><a href="">AVIX</a></li>
+                </ul>
+              </figure>
+            </article>
+          </div>
+        </div>
+        <p class="footer-description">
+          АВИКС ДИСТРИБЬЮТОРСКИЙ ЦЕНТР — официальный дистрибьютор турникетов
+          Gotschlich на территории России и стран СНГ. Владелец торговой марки
+          премиальных турникетов AVIX. Вся представленная на сайте информация,
+          касающаяся технических характеристик, стоимости товаров и услуг, носит
+          информационный характер и ни при каких условиях не является публичной
+          офертой.
+        </p>
+        <div class="grey-underline"></div>
+        <div class="policy-hrefs">
+          <a href="">Политика конфиденциальности</a>
+          <a href="">Правовая информация</a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
